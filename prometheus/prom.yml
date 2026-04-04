@@ -36,6 +36,36 @@ scrape_configs:
         labels:
           instance: 'TRI-CRE-LAX-N1-01'          
 
+  - job_name: 'TRI-MN-ASH-N2-02'
+    static_configs:
+      - targets: ['45.59.171.173:9040']
+        labels:
+          instance: 'TRI-MN-ASH-N2-02'   
+
+  - job_name: 'TRI-SB-ASH-N2-02'
+    static_configs:
+      - targets: ['45.59.171.173:9041']
+        labels:
+          instance: 'TRI-SB-ASH-N2-02'  
+
+  - job_name: 'TRI-PRX-ASH-N2-02'
+    static_configs:
+      - targets: ['45.59.171.173:9042']
+        labels:
+          instance: 'TRI-PRX-ASH-N2-02' 
+
+  - job_name: 'TRI-LBB-ASH-N2-02'
+    static_configs:
+      - targets: ['45.59.171.173:9043']
+        labels:
+          instance: 'TRI-LBB-ASH-N2-02' 
+
+  - job_name: 'TRI-BLD-ASH-N2-01'
+    static_configs:
+      - targets: ['45.59.171.173:9044']
+        labels:
+          instance: 'TRI-BLD-ASH-N2-01'
+
   # - job_name: 'example_api'
   #   scheme: http
   #   static_configs:
