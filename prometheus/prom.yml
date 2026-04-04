@@ -12,6 +12,30 @@ scrape_configs:
         labels:
           instance: 'TRI-SB-LAX-N1-01'
 
+  - job_name: 'TRI-PRX-LAX-N1-01'
+    static_configs:
+      - targets: ['72.5.46.63:9041']
+        labels:
+          instance: 'TRI-PRX-LAX-N1-01'
+
+  - job_name: 'TRI-MN-LAX-N1-01'
+    static_configs:
+      - targets: ['72.5.46.63:9042']
+        labels:
+          instance: 'TRI-MN-LAX-N1-01'          
+
+  - job_name: 'TRI-LBB-LAX-N1-01'
+    static_configs:
+      - targets: ['72.5.46.63:9043']
+        labels:
+          instance: 'TRI-LBB-LAX-N1-01'
+
+  - job_name: 'TRI-CRE-LAX-N1-01'
+    static_configs:
+      - targets: ['72.5.46.63:9044']
+        labels:
+          instance: 'TRI-CRE-LAX-N1-01'          
+
   # - job_name: 'example_api'
   #   scheme: http
   #   static_configs:
